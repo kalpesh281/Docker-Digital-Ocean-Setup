@@ -76,6 +76,11 @@ docker run -d -p 5002:5002 username/project_name:V0.0.1
 ```
 
 ### Dockerfile for Backend
+
+The project uses a multi-stage Docker build to minimize the final image size:
+
+```dockerfile
+
 # Use an official Node.js runtime as a parent image
 FROM node:23 AS build
 
@@ -179,6 +184,7 @@ EXPOSE 5005
 # Command to run the app
 CMD ["serve", "-s", "build", "-l", "5005"]
 
+```
 
 ### Push to Docker Hub
 
