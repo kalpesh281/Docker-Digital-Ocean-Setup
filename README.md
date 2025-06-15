@@ -1,7 +1,5 @@
 # MERN Stack Project Deployment Guide
 
-
-
 ## Table of Contents
 - [Local Development](#local-development)
 - [Docker Setup](#docker-setup)
