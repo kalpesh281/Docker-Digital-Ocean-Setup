@@ -1,6 +1,6 @@
 # MERN Stack Project Deployment Guide
 
-This repository contains a MERN stack application with a complete deployment workflow using Docker, Nginx, and Let's Encrypt for SSL. This guide will help you deploy your own MERN applications using the same infrastructure.
+
 
 ## Table of Contents
 - [Local Development](#local-development)
