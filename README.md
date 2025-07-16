@@ -224,20 +224,6 @@ docker run -d -p 5002:5002 username/project_name:V0.0.1
 
 ## Server Configuration
 
-### Configure Firewall
-
-Allow the required ports through the firewall:
-
-```bash
-sudo firewall-cmd --zone=public --add-port=5002/tcp --permanent
-sudo firewall-cmd --reload
-```
-
-Verify the configuration:
-
-```bash
-sudo firewall-cmd --list-all
-```
 
 ### Configure Nginx
 
@@ -271,13 +257,7 @@ Enable the site:
 sudo ln -s /etc/nginx/sites-available/project /etc/nginx/sites-enabled/
 ```
 
-#### For distributions using conf.d:
 
-```bash
-sudo nano /etc/nginx/conf.d/project.com.conf
-```
-
-Add the same configuration as above.
 
 ### Test and Reload Nginx
 
